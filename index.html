@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Favicon -->
+  <link rel="shortcut icon" href="/images/FiconM.png" type="image/x-icon"> 
+  <!-- Icon Phone -->
+  <link rel="apple-touch-icon" href="/images/FiconM.png">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/e89218ea00.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <div class="container">
+
+        <div class="gradient"></div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2>ToDo List</h2>
+                <div id="form">
+                    <input type="text" id="input-box" placeholder="Add a new task">
+                    <button onclick="addTask()" type="submit">+</button>
+                </div>
+                <ul id="list"></ul>
+            </div>
+        </div>  
+
+
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
