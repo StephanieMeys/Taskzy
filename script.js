@@ -60,3 +60,14 @@ card.addEventListener('mousemove', (e) => {
     card.style.setProperty('--mouse-x', `${x}%`);
     card.style.setProperty('--mouse-y', `${y}%`);
 });
+
+
+// Loading screen
+const loadingScreen = document.querySelector('.loading');
+
+window.addEventListener('load', () => {
+    // Add a delay to remove the loading screen
+    setTimeout(() => {
+        loadingScreen.classList.add('loaded');
+    }, 1500);
+});

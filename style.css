@@ -137,3 +137,35 @@
 #list li button:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+
+/* Loading */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--primary-bg), #48705f);
+    z-index: 1;
+} 
+.loading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+}
+.loading.loaded {
+    animation: fadeOut 0.5s forwards;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
