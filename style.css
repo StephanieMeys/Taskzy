@@ -24,7 +24,7 @@
 
 .card {
     width: 350px;
-    height: 450px;
+    height: 650px;
     background-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y), 
     var(--shadow-color) 0%,
     transparent 100%
@@ -45,8 +45,8 @@
     justify-content: space-between;
 }
 .card {
-    --mouse-x: 50%;
-    --mouse-y: 50%;
+    --mouse-x: 0%;
+    --mouse-y: 0%;
 }
 
 .card-body {
